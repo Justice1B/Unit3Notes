@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clicker Game</title>
+  <style>
+    body {
+      text-align: center;
+      margin: 50px;
+      font-size: 24px;
+    }
+    button {
+      font-size: 48px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<h1>Batman Clicker</h1>
+<img id="cookie_image" src="https://bloximages.chicago2.vip.townnews.com/tucson.com/content/tncms/assets/v3/editorial/7/25/7255d492-0d8a-11e2-bdc0-0019bb2963f4/506c89f504d44.image.jpg">
+
+
+<p>Click for batman to stalk you:</p>
+<button onclick="incrementScore()">Click</button>
+<p>Your score is: <span id="score">0</span></p>
+
+<script>
+  let score = 0;
+  const scoreDisplay = document.getElementById("score");
+
+  function incrementScore() {
+    score++;
+    scoreDisplay.innerText = score;
+  }
+</script>
+</body>
+</html>
